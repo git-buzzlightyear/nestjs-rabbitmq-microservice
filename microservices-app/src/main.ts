@@ -9,7 +9,7 @@ async function bootstrap() {
       urls: ['amqp://guest:guest@localhost:5672/hello'],
       queue: 'user-messages',
       queueOptions: {
-        durable: false
+        durable: true
       },
     },
   });
